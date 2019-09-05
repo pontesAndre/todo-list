@@ -25,7 +25,7 @@ git clone https://github.com/pontesAndre/todo-list.git
 ```
 ## Build 
 
-#####command line
+##### command line
 Para o build  do projeto com o Maven, executar os comandos abaixo :
 
 ```shell
@@ -34,27 +34,27 @@ mvn clean install
 ```
 O comando irá baixar todas as dependências do projeto.
 
-#####IDE Eclipse
+##### IDE Eclipse
 -  Importar o projeto na IDE Eclipse (Existing Maven Project)
 -  Execute RunAs Mavem Install para baixar dependências necessárias.
 
-##Executar
+## Executar
 
 - Para executar o projeto é necessário a IDE Eclipse
 - Executar a classe TodoListApplication que possui a anotação @springbootapplication, e tem o método main, que invoca o método run da classe SpringApplication. 
 
-##Documentação
+## Documentação
 
 Para acessar a documentação da API, devemos executar o projeto e entrar no endereço: 
   -  http://localhost:8080/swagger-ui.html;
 
 
-##Métricas e desempenho
+## Métricas e desempenho
 
 Para acessar as informações disponibilizadas pelo Actuator, devemos executar o projeto e entrar no endereço:
    -  http://localhost:8080/actuator; 
 
-#####Exemplos
+##### Exemplos
 
 - Para que o Actuator acesse:  /metrics
 
@@ -72,7 +72,7 @@ curl -X GET "http://localhost:8080/actuator/health" -H "accept: */*""
 curl -X GET "localhost:8080/actuator" -H "accept: */*"
 ```
 
-##Autenticação
+## Autenticação
 
 - A API utiliza autenticação stateless utilizando tokens JWT (Json Web Token).
 - Autenticação utiliza email e senha. A API usa a senha no formato do BCrypt.
@@ -117,7 +117,7 @@ curl -X DELETE "http://localhost:8080/todo/2" -H "accept: */*" -H "Authorization
 curl -X PUT "http://localhost:8080/todo/1" -H "accept: */*" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUEkgVE9ETy1MSVNUIiwic3ViIjoiMSIsImlhdCI6MTU2NzU5MTM5MCwiZXhwIjoxNTY3NTk4NTkwfQ.A1FrpBG6vC_QDs0DYaMwjISJUMpBk-IrlnhEmAjKJ1c" -H "Content-Type: application/json" -d "{ \"description\": \"descricao tarefa\", \"summary\": \"titulo\"}"
 ```
 
-##Persistência
+## Persistência
 - A API usa persistência em memória com banco de dados H2
 - o Spring Boot popula automaticamente o banco de dados da aplicação. Baseado no arquivo src/main/resources/data.sql 
 
