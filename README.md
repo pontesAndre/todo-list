@@ -20,7 +20,7 @@ Para executar o projeto, será necessário instalar:
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub em um diretório de sua preferência:
 
 ```shell
-cd "diretorio de sua preferencia"
+cd <diretorio_projeto>
 git clone https://github.com/pontesAndre/todo-list.git
 ```
 ## Build 
@@ -29,7 +29,7 @@ git clone https://github.com/pontesAndre/todo-list.git
 Para o build  do projeto com o Maven, executar os comandos abaixo :
 
 ```shell
-cd "diretorio onde clonou o projeto "
+cd <diretorio_projeto>/todo-list
 mvn clean install
 ```
 O comando irá baixar todas as dependências do projeto.
@@ -38,9 +38,16 @@ O comando irá baixar todas as dependências do projeto.
 -  Importar o projeto na IDE Eclipse (Existing Maven Project)
 -  Execute RunAs Mavem Install para baixar dependências necessárias.
 
-## Executar
+## Executar 
 
-- Para executar o projeto é necessário a IDE Eclipse
+##### command line
+
+```shell
+mvn clean install
+java -jar <diretorio_projeto>/todo-list/target/todo-list-0.0.1-SNAPSHOT.jar
+```
+##### IDE Eclipse
+
 - Executar a classe TodoListApplication que possui a anotação @springbootapplication, e tem o método main, que invoca o método run da classe SpringApplication. 
 
 ## Documentação
