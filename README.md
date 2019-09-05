@@ -43,6 +43,7 @@ O comando irá baixar todas as dependências do projeto.
 ##### command line
 
 ```shell
+cd <diretorio_projeto>/todo-list
 mvn clean install
 java -jar <diretorio_projeto>/todo-list/target/todo-list-0.0.1-SNAPSHOT.jar
 ```
