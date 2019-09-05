@@ -5,7 +5,7 @@ TODO-LIST é uma API REST com Spring Boot implementada em JAVA11. Utiliza:
 - Spring Boot Actuator para monitorar: status, memória, processamento, JVM, requisições web, entre outras métricas;
 - Autenticação stateless utilizando tokens JWT (Json Web Token);
 - Cache do Spring Boot para melhorar a performance;
-- Documentação utilizar o Swagger, com o módulo SpringFox Swagger;
+- Documentação em Swagger, com o módulo SpringFox Swagger;
  
 ## Requisitos para executar a API
 
